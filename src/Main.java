@@ -130,7 +130,8 @@ public class Main {
         }
         System.out.println();
     }
-    public static void task7(){
+
+    public static void task7() {
         System.out.println("Задача 7");
         //В компании пятница — отчетный день.
         //
@@ -141,18 +142,19 @@ public class Main {
         //Выведите на каждую пятницу месяца (включая полученную) сообщение следующего вида: «Сегодня пятница, ...-е число. Необходимо подготовить отчет».
         //
         //В нашем месяце 31 день. В результате у вас должно получиться от 4 до 5 сообщений с напоминаниями по разным датам.
-        int friday=2;
-        int today=1;
-        while(today<=31){
+        int friday = 2;
+        int today = 1;
+        while (today <= 31) {
             today++;
-            if (today==friday){
-                System.out.println("Сегодня пятница, "+today+" число. Необходимо подготовить отчет");
-                friday=friday+7;
+            if (today == friday) {
+                System.out.println("Сегодня пятница, " + today + " число. Необходимо подготовить отчет");
+                friday = friday + 7;
             }
         }
         System.out.println();
     }
-    public static void task8(){
+
+    public static void task8() {
         System.out.println("Задача 8");
         //Нам нужно написать астрономическое приложение, которое считает, когда над Землей пролетает комета.
         //
@@ -169,11 +171,11 @@ public class Main {
         //1975
         //
         //2054
-        int years5=0;
-        int past=2022-200;
-        int future=2022+100;
-        for (;years5<=future;years5=years5+79){
-            if (years5<2022&&years5>past||years5>2022&&years5<future){
+        int years5 = 0;
+        int past = 2022 - 200;
+        int future = 2022 + 100;
+        for (; years5 <= future; years5 = years5 + 79) {
+            if (years5 < 2022 && years5 > past || years5 > 2022 && years5 < future) {
                 System.out.println(years5);
             }
         }
